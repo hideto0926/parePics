@@ -1,0 +1,127 @@
+/* parePics — 落ち着いた紙とインクの配色（アプリと同じ） */
+:root {
+  --paper: #f4f1ea;
+  --wall: #e6dfd2;
+  --card: #fbf9f5;
+  --ink: #2b2926;
+  --muted: #6f6961;
+  --brass: #8a6d3b;
+  --hairline: rgba(43, 41, 38, 0.14);
+  --serif-ja: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif JP", serif;
+  --serif-en: "New York", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Helvetica Neue", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1b1a18;
+    --wall: #24221f;
+    --card: #262422;
+    --ink: #ece7de;
+    --muted: #a39c91;
+    --brass: #c4a36e;
+    --hairline: rgba(236, 231, 222, 0.14);
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.9;
+  font-size: 16px;
+}
+:lang(en) body, body:lang(en) { line-height: 1.7; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--brass); text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+
+.serif { font-family: var(--serif-ja); }
+:lang(en) .serif { font-family: var(--serif-en); }
+
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+/* ヘッダー */
+.site-header { border-bottom: 1px solid var(--hairline); }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; }
+.brand img { width: 30px; height: 30px; border-radius: 7px; }
+.brand span { font-family: var(--serif-en); font-style: italic; font-size: 20px; }
+.lang { font-size: 13px; letter-spacing: 0.08em; color: var(--muted); }
+.lang a, .lang strong { color: var(--muted); text-decoration: none; padding: 4px 6px; }
+.lang strong { color: var(--ink); font-weight: 500; }
+
+/* ヒーロー */
+.hero { padding: 72px 0 56px; }
+.hero .wrap { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; }
+.eyebrow { font-family: var(--serif-en); font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--brass); margin: 0 0 18px; }
+.hero h1 { font-family: var(--serif-ja); font-weight: 600; font-size: clamp(34px, 5vw, 52px); line-height: 1.45; letter-spacing: 0.04em; margin: 0 0 22px; }
+:lang(en) .hero h1 { font-family: var(--serif-en); font-weight: 500; letter-spacing: 0; line-height: 1.2; }
+.hero p.lead { color: var(--muted); margin: 0 0 32px; max-width: 30em; }
+.icon-large { width: 88px; height: 88px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.18); margin-bottom: 28px; }
+.hero-art { background: var(--wall); box-shadow: 0 2px 4px rgba(0,0,0,0.08), 0 24px 60px rgba(0,0,0,0.14); }
+/* 3D の壁（three.js）。読み込むまでは静止画を見せ、描けたら重ねる */
+.hero-stage { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: var(--wall);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08), 0 24px 60px rgba(0,0,0,0.14); cursor: pointer; }
+.hero-stage img { width: 100%; height: 100%; object-fit: cover; }
+.hero-stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.9s ease; }
+.hero-stage.is-3d canvas { opacity: 1; }
+.hero-stage img { transition: opacity 0.6s ease; }
+.hero-stage.is-3d img { opacity: 0; }
+.store-button {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--ink); color: var(--paper); text-decoration: none;
+  padding: 14px 26px; border-radius: 4px; font-size: 15px; letter-spacing: 0.06em;
+}
+.store-button:hover { color: var(--paper); opacity: 0.86; }
+.store-note { display: block; margin-top: 12px; font-size: 12px; color: var(--muted); }
+
+/* セクション */
+section { padding: 64px 0; border-top: 1px solid var(--hairline); }
+section h2 { font-family: var(--serif-ja); font-weight: 600; font-size: clamp(24px, 3.4vw, 32px); letter-spacing: 0.05em; margin: 0 0 12px; }
+:lang(en) section h2 { font-family: var(--serif-en); font-weight: 500; letter-spacing: 0; }
+section .intro { color: var(--muted); margin: 0 0 40px; max-width: 36em; }
+
+/* スクリーンショット */
+.screens { display: flex; gap: 20px; overflow-x: auto; padding: 4px 24px 24px; margin: 0 -24px; scroll-snap-type: x mandatory; }
+.screens img { width: 240px; flex: 0 0 auto; border-radius: 18px; scroll-snap-align: start; box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
+
+/* 特長 */
+.features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 36px; }
+.feature h3 { font-family: var(--serif-ja); font-weight: 600; font-size: 18px; letter-spacing: 0.04em; margin: 0 0 8px; }
+:lang(en) .feature h3 { font-family: var(--serif-en); font-weight: 500; letter-spacing: 0; }
+.feature p { margin: 0; color: var(--muted); font-size: 15px; }
+.feature .num { font-family: var(--serif-en); color: var(--brass); font-size: 14px; letter-spacing: 0.1em; display: block; margin-bottom: 6px; }
+
+/* 使い方 */
+.steps { list-style: none; padding: 0; margin: 0; counter-reset: step; display: grid; gap: 18px; max-width: 40em; }
+.steps li { counter-increment: step; display: grid; grid-template-columns: 44px 1fr; align-items: baseline; }
+.steps li::before { content: counter(step, decimal-leading-zero); font-family: var(--serif-en); color: var(--brass); font-size: 15px; }
+
+/* 文書ページ（プライバシーポリシー） */
+.doc { padding: 56px 0 80px; }
+.doc .wrap { max-width: 760px; }
+.doc h1 { font-family: var(--serif-ja); font-weight: 600; font-size: clamp(28px, 4vw, 38px); letter-spacing: 0.04em; margin: 0 0 8px; }
+:lang(en) .doc h1 { font-family: var(--serif-en); font-weight: 500; letter-spacing: 0; }
+.doc .updated { color: var(--muted); font-size: 14px; margin: 0 0 40px; }
+.doc h2 { font-family: var(--serif-ja); font-weight: 600; font-size: 20px; letter-spacing: 0.03em; margin: 44px 0 10px; padding-top: 24px; border-top: 1px solid var(--hairline); }
+:lang(en) .doc h2 { font-family: var(--serif-en); font-weight: 500; letter-spacing: 0; }
+.doc ul { padding-left: 1.2em; }
+.doc li { margin: 4px 0; }
+
+/* フッター */
+.site-footer { border-top: 1px solid var(--hairline); padding: 36px 0 48px; color: var(--muted); font-size: 13px; }
+.site-footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: space-between; }
+.site-footer nav { display: flex; gap: 22px; }
+.site-footer a { color: var(--muted); text-decoration: none; }
+.site-footer a:hover { color: var(--ink); }
+
+@media (max-width: 760px) {
+  .hero { padding: 44px 0 36px; }
+  .hero .wrap { grid-template-columns: 1fr; gap: 36px; }
+  .features { grid-template-columns: 1fr; gap: 28px; }
+  section { padding: 48px 0; }
+  .screens img { width: 200px; }
+}
