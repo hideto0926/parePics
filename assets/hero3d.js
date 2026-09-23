@@ -1,4 +1,4 @@
-// parePics — トップの壁を、斜めから正面へ回り込みながら寄る3D表示にする（three.js）。
+// pairPics — トップの壁を、斜めから正面へ回り込みながら寄る3D表示にする（three.js）。
 // WebGL が使えない、または「視差効果を減らす」が有効な場合は、静止画のまま表示する。
 import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js";
 
