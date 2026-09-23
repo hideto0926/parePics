@@ -19,7 +19,7 @@ async function init(stage) {
   stage.appendChild(canvas);
 
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x1b1a18);
+  scene.background = new THREE.Color(0x1a2b3c);
   const camera = new THREE.PerspectiveCamera(30, 0.8, 0.01, 100);
 
   // 壁（アプリで描いた全体像）。世界の大きさは幅 4 × 高さ 5

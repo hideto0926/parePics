@@ -21,6 +21,31 @@ T = {
         "lead": "pairPicsは、何枚かの写真をひとつの作品として見せるためのiPhoneアプリです。上質な壁に、額とマットを選んで掛け、投稿する順番どおりに書き出します。",
         "store": "App Storeでダウンロード",
         "store_soon": "App Storeにて近日公開",
+        "gal_eyebrow": "Three galleries",
+        "gal_h": "3つのギャラリー",
+        "gal_intro": "壁に掛けるウォールモードのほかに、組み写真を飾る場所を3つ用意しました。森、コンクリートの美術館、海の見えるガラスの展示室。どこで見せるかで、同じ写真の表情が変わります。",
+        "gal_hint": "動かすと見回せます・スクロールで奥へ",
+        "galleries": [
+            {"key": "forest", "no": "01", "en": "Forest", "h": "森の美術館",
+             "lead": "木漏れ日の森に、額が静かに浮かびます。小道をゆっくり歩きながら、一枚ずつ出会っていく展示です。",
+             "points": ["実写の森に、霧と光の柱。後ろの木々は風でゆらゆらと揺れます",
+                        "額は目の高さに浮かび、小道の左右に振り分けて並びます",
+                        "動画では、木漏れ日がレンズに入って一瞬きらりと光ります"],
+             "plates": [("forest_2.jpg", "浮かぶ額の正面"), ("forest_3.jpg", "木漏れ日の中の一枚"), ("forest_4.jpg", "最後の一枚（キー写真）")]},
+            {"key": "museum", "no": "02", "en": "Concrete museum", "h": "コンクリートの美術館",
+             "lead": "打ちっぱなしのコンクリートの入口から、天井の高い廊下を抜けて、光の差す大きな展示室へ。最後の一枚は、見上げるほどの大きさで。",
+             "points": ["入口・廊下・突き当たり・展示室に、どの写真を置くかを選べます",
+                        "展示室の一枚は、額もマットもないアクリルパネルで縦16mまで",
+                        "スポットの光、金色の球体、半透明の人影が大きさを伝えます。歩いて巡る動画は15〜60秒"],
+             "plates": [("museum_2.jpg", "入口の壁"), ("museum_3.jpg", "暗い廊下と人影"), ("museum_4.jpg", "展示室の大きな一枚")]},
+            {"key": "sea", "no": "03", "en": "Glass gallery by the sea", "h": "海のガラス美術館",
+             "lead": "一面のガラスの向こうに、凪いだ海と小島。組み写真をガラス面に掛けると、磨かれた床に空と額が映り込みます。",
+             "points": ["朝・真昼・午後・夕暮れ・曇りの5つの時間帯から選べます",
+                        "並びの型・額縁・マット・タイトルは、ウォールモードと同じように選べます",
+                        "動画では、ガラスの向こうの海がきらめきます"],
+             "plates": [("sea_2.jpg", "真昼"), ("sea_3.jpg", "夕暮れ"), ("sea_4.jpg", "動画の一コマ")],
+             "lights": [("morning", "朝"), ("noon", "真昼"), ("dusk", "夕暮れ"), ("cloudy", "曇り")]},
+        ],
         "shots_h": "スクリーンショット",
         "features_h": "特長",
         "features_intro": "写真の一枚一枚より、組み写真としての佇まいを大切にしました。",
@@ -93,6 +118,31 @@ T = {
         "lead": "pairPics is an iPhone app for presenting several photos as a single work. Choose a fine wall, a frame and a mat, then export everything in the order you’ll post it.",
         "store": "Download on the App Store",
         "store_soon": "Coming soon to the App Store",
+        "gal_eyebrow": "Three galleries",
+        "gal_h": "Three galleries",
+        "gal_intro": "Beyond the classic wall, there are three places to show your photo set: a forest, a concrete museum and a glass gallery by the sea. The same photos take on a different character in each.",
+        "gal_hint": "Move to look around · scroll to walk in",
+        "galleries": [
+            {"key": "forest", "no": "01", "en": "Forest", "h": "The Forest Gallery",
+             "lead": "Frames float quietly in a sunlit forest. Walk slowly along the path and meet your photos one at a time.",
+             "points": ["A real forest with mist and shafts of light, the trees swaying gently in the wind",
+                        "Frames float at eye level, placed on either side of the path",
+                        "In the video, sunlight through the leaves catches the lens for a brief glint"],
+             "plates": [("forest_2.jpg", "A floating frame"), ("forest_3.jpg", "In the dappled light"), ("forest_4.jpg", "The last photo (key photo)")]},
+            {"key": "museum", "no": "02", "en": "Concrete museum", "h": "The Concrete Museum",
+             "lead": "From a raw-concrete entrance, through a tall corridor, into a great hall filled with light. The final photo is big enough to look up at.",
+             "points": ["Choose which photos go in the entrance, the corridor, at its end and in the hall",
+                        "The hall photo is an unframed acrylic panel up to 16 meters tall",
+                        "Spotlights, golden spheres and translucent figures give a sense of scale. Walk-through videos run 15 to 60 seconds"],
+             "plates": [("museum_2.jpg", "The entrance wall"), ("museum_3.jpg", "A dim corridor"), ("museum_4.jpg", "The great hall")]},
+            {"key": "sea", "no": "03", "en": "Glass gallery by the sea", "h": "The Glass Gallery by the Sea",
+             "lead": "Beyond a wall of glass, a calm sea and a small island. Hang your photo set on the glass, and the polished floor reflects the sky and the frames.",
+             "points": ["Five times of day: morning, noon, afternoon, dusk and overcast",
+                        "Arrangements, frames, mats and titles work just like the wall mode",
+                        "In the video, the sea beyond the glass glitters"],
+             "plates": [("sea_2.jpg", "Noon"), ("sea_3.jpg", "Dusk"), ("sea_4.jpg", "A frame from the video")],
+             "lights": [("morning", "Morning"), ("noon", "Noon"), ("dusk", "Dusk"), ("cloudy", "Overcast")]},
+        ],
         "shots_h": "Screenshots",
         "features_h": "Features",
         "features_intro": "Designed around the quiet presence of a photo set, rather than any single image.",
@@ -175,6 +225,7 @@ def head(t, title, root, alternate_ja, alternate_en):
 <link rel="alternate" hreflang="ja" href="{alternate_ja}">
 <link rel="alternate" hreflang="en" href="{alternate_en}">
 <link rel="stylesheet" href="{root}assets/style.css">
+<script type="importmap">{{"imports": {{"three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"}}}}</script>
 </head>
 <body>
 """
@@ -211,6 +262,52 @@ def footer(t, lang, root):
 """
 
 
+def galleries(t, root):
+    nav = "\n".join(f'      <a href="#g-{g['key']}"><span>{g['no']}</span>{g['h']}</a>' for g in t["galleries"])
+    blocks = []
+    for g in t["galleries"]:
+        points = "\n".join(f"          <li>{p}</li>" for p in g["points"])
+        plates = "\n".join(f'''      <figure><img src="{root}assets/gallery/{src}" alt="{cap}" loading="lazy" width="720" height="900"><figcaption>{cap}</figcaption></figure>'''
+                            for src, cap in g["plates"])
+        lights = ""
+        if g.get("lights"):
+            buttons = "".join(f'<button type="button" data-light="{k}" aria-pressed="{str(k == "noon").lower()}">{name}</button>' for k, name in g["lights"])
+            lights = f'\n        <div class="g-lights">{buttons}</div>'
+        blocks.append(f"""<section class="gallery gallery-{g['key']}" id="g-{g['key']}">
+  <div class="wrap">
+    <div class="g-grid">
+      <div class="g-stage" data-g3d="{g['key']}" data-root="{root}">
+        <img src="{root}assets/gallery/{g['key']}_1.jpg" alt="{g['h']}" width="720" height="900">
+        <span class="g-hint">{t['gal_hint']}</span>{lights}
+      </div>
+      <div class="g-text">
+        <p class="eyebrow">Gallery {g['no']} — {g['en']}</p>
+        <h2>{g['h']}</h2>
+        <p class="lead">{g['lead']}</p>
+        <ul class="g-points">
+{points}
+        </ul>
+      </div>
+    </div>
+    <div class="g-plates">
+{plates}
+    </div>
+  </div>
+</section>
+""")
+    return f"""<section class="galleries-intro">
+  <div class="wrap">
+    <p class="eyebrow">{t['gal_eyebrow']}</p>
+    <h2>{t['gal_h']}</h2>
+    <p class="intro">{t['gal_intro']}</p>
+    <nav class="g-nav">
+{nav}
+    </nav>
+  </div>
+</section>
+""" + "".join(blocks)
+
+
 def home_page(lang):
     t = T[lang]
     root = "" if lang == "ja" else "../"
@@ -239,6 +336,7 @@ def home_page(lang):
   </div>
 </div>
 
+{galleries(t, root)}
 <section>
   <div class="wrap">
     <h2>{t['shots_h']}</h2>
@@ -276,6 +374,7 @@ def home_page(lang):
 </section>
 </main>
 <script type="module" src="{root}assets/hero3d.js"></script>
+<script type="module" src="{root}assets/galleries3d.js"></script>
 """ + footer(t, lang, root)
 
 

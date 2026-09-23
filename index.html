@@ -14,6 +14,7 @@
 <link rel="alternate" hreflang="ja" href="./">
 <link rel="alternate" hreflang="en" href="en/">
 <link rel="stylesheet" href="assets/style.css">
+<script type="importmap">{"imports": {"three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"}}</script>
 </head>
 <body>
 <header class="site-header">
@@ -37,6 +38,95 @@
     </div>
   </div>
 </div>
+
+<section class="galleries-intro">
+  <div class="wrap">
+    <p class="eyebrow">Three galleries</p>
+    <h2>3つのギャラリー</h2>
+    <p class="intro">壁に掛けるウォールモードのほかに、組み写真を飾る場所を3つ用意しました。森、コンクリートの美術館、海の見えるガラスの展示室。どこで見せるかで、同じ写真の表情が変わります。</p>
+    <nav class="g-nav">
+      <a href="#g-forest"><span>01</span>森の美術館</a>
+      <a href="#g-museum"><span>02</span>コンクリートの美術館</a>
+      <a href="#g-sea"><span>03</span>海のガラス美術館</a>
+    </nav>
+  </div>
+</section>
+<section class="gallery gallery-forest" id="g-forest">
+  <div class="wrap">
+    <div class="g-grid">
+      <div class="g-stage" data-g3d="forest" data-root="">
+        <img src="assets/gallery/forest_1.jpg" alt="森の美術館" width="720" height="900">
+        <span class="g-hint">動かすと見回せます・スクロールで奥へ</span>
+      </div>
+      <div class="g-text">
+        <p class="eyebrow">Gallery 01 — Forest</p>
+        <h2>森の美術館</h2>
+        <p class="lead">木漏れ日の森に、額が静かに浮かびます。小道をゆっくり歩きながら、一枚ずつ出会っていく展示です。</p>
+        <ul class="g-points">
+          <li>実写の森に、霧と光の柱。後ろの木々は風でゆらゆらと揺れます</li>
+          <li>額は目の高さに浮かび、小道の左右に振り分けて並びます</li>
+          <li>動画では、木漏れ日がレンズに入って一瞬きらりと光ります</li>
+        </ul>
+      </div>
+    </div>
+    <div class="g-plates">
+      <figure><img src="assets/gallery/forest_2.jpg" alt="浮かぶ額の正面" loading="lazy" width="720" height="900"><figcaption>浮かぶ額の正面</figcaption></figure>
+      <figure><img src="assets/gallery/forest_3.jpg" alt="木漏れ日の中の一枚" loading="lazy" width="720" height="900"><figcaption>木漏れ日の中の一枚</figcaption></figure>
+      <figure><img src="assets/gallery/forest_4.jpg" alt="最後の一枚（キー写真）" loading="lazy" width="720" height="900"><figcaption>最後の一枚（キー写真）</figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="gallery gallery-museum" id="g-museum">
+  <div class="wrap">
+    <div class="g-grid">
+      <div class="g-stage" data-g3d="museum" data-root="">
+        <img src="assets/gallery/museum_1.jpg" alt="コンクリートの美術館" width="720" height="900">
+        <span class="g-hint">動かすと見回せます・スクロールで奥へ</span>
+      </div>
+      <div class="g-text">
+        <p class="eyebrow">Gallery 02 — Concrete museum</p>
+        <h2>コンクリートの美術館</h2>
+        <p class="lead">打ちっぱなしのコンクリートの入口から、天井の高い廊下を抜けて、光の差す大きな展示室へ。最後の一枚は、見上げるほどの大きさで。</p>
+        <ul class="g-points">
+          <li>入口・廊下・突き当たり・展示室に、どの写真を置くかを選べます</li>
+          <li>展示室の一枚は、額もマットもないアクリルパネルで縦16mまで</li>
+          <li>スポットの光、金色の球体、半透明の人影が大きさを伝えます。歩いて巡る動画は15〜60秒</li>
+        </ul>
+      </div>
+    </div>
+    <div class="g-plates">
+      <figure><img src="assets/gallery/museum_2.jpg" alt="入口の壁" loading="lazy" width="720" height="900"><figcaption>入口の壁</figcaption></figure>
+      <figure><img src="assets/gallery/museum_3.jpg" alt="暗い廊下と人影" loading="lazy" width="720" height="900"><figcaption>暗い廊下と人影</figcaption></figure>
+      <figure><img src="assets/gallery/museum_4.jpg" alt="展示室の大きな一枚" loading="lazy" width="720" height="900"><figcaption>展示室の大きな一枚</figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="gallery gallery-sea" id="g-sea">
+  <div class="wrap">
+    <div class="g-grid">
+      <div class="g-stage" data-g3d="sea" data-root="">
+        <img src="assets/gallery/sea_1.jpg" alt="海のガラス美術館" width="720" height="900">
+        <span class="g-hint">動かすと見回せます・スクロールで奥へ</span>
+        <div class="g-lights"><button type="button" data-light="morning" aria-pressed="false">朝</button><button type="button" data-light="noon" aria-pressed="true">真昼</button><button type="button" data-light="dusk" aria-pressed="false">夕暮れ</button><button type="button" data-light="cloudy" aria-pressed="false">曇り</button></div>
+      </div>
+      <div class="g-text">
+        <p class="eyebrow">Gallery 03 — Glass gallery by the sea</p>
+        <h2>海のガラス美術館</h2>
+        <p class="lead">一面のガラスの向こうに、凪いだ海と小島。組み写真をガラス面に掛けると、磨かれた床に空と額が映り込みます。</p>
+        <ul class="g-points">
+          <li>朝・真昼・午後・夕暮れ・曇りの5つの時間帯から選べます</li>
+          <li>並びの型・額縁・マット・タイトルは、ウォールモードと同じように選べます</li>
+          <li>動画では、ガラスの向こうの海がきらめきます</li>
+        </ul>
+      </div>
+    </div>
+    <div class="g-plates">
+      <figure><img src="assets/gallery/sea_2.jpg" alt="真昼" loading="lazy" width="720" height="900"><figcaption>真昼</figcaption></figure>
+      <figure><img src="assets/gallery/sea_3.jpg" alt="夕暮れ" loading="lazy" width="720" height="900"><figcaption>夕暮れ</figcaption></figure>
+      <figure><img src="assets/gallery/sea_4.jpg" alt="動画の一コマ" loading="lazy" width="720" height="900"><figcaption>動画の一コマ</figcaption></figure>
+    </div>
+  </div>
+</section>
 
 <section>
   <div class="wrap">
@@ -89,6 +179,7 @@
 </section>
 </main>
 <script type="module" src="assets/hero3d.js"></script>
+<script type="module" src="assets/galleries3d.js"></script>
 <footer class="site-footer">
   <div class="wrap">
     <span>© 2026 pairPics</span>

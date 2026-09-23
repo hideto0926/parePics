@@ -14,6 +14,7 @@
 <link rel="alternate" hreflang="ja" href="../">
 <link rel="alternate" hreflang="en" href="./">
 <link rel="stylesheet" href="../assets/style.css">
+<script type="importmap">{"imports": {"three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"}}</script>
 </head>
 <body>
 <header class="site-header">
@@ -37,6 +38,95 @@
     </div>
   </div>
 </div>
+
+<section class="galleries-intro">
+  <div class="wrap">
+    <p class="eyebrow">Three galleries</p>
+    <h2>Three galleries</h2>
+    <p class="intro">Beyond the classic wall, there are three places to show your photo set: a forest, a concrete museum and a glass gallery by the sea. The same photos take on a different character in each.</p>
+    <nav class="g-nav">
+      <a href="#g-forest"><span>01</span>The Forest Gallery</a>
+      <a href="#g-museum"><span>02</span>The Concrete Museum</a>
+      <a href="#g-sea"><span>03</span>The Glass Gallery by the Sea</a>
+    </nav>
+  </div>
+</section>
+<section class="gallery gallery-forest" id="g-forest">
+  <div class="wrap">
+    <div class="g-grid">
+      <div class="g-stage" data-g3d="forest" data-root="../">
+        <img src="../assets/gallery/forest_1.jpg" alt="The Forest Gallery" width="720" height="900">
+        <span class="g-hint">Move to look around · scroll to walk in</span>
+      </div>
+      <div class="g-text">
+        <p class="eyebrow">Gallery 01 — Forest</p>
+        <h2>The Forest Gallery</h2>
+        <p class="lead">Frames float quietly in a sunlit forest. Walk slowly along the path and meet your photos one at a time.</p>
+        <ul class="g-points">
+          <li>A real forest with mist and shafts of light, the trees swaying gently in the wind</li>
+          <li>Frames float at eye level, placed on either side of the path</li>
+          <li>In the video, sunlight through the leaves catches the lens for a brief glint</li>
+        </ul>
+      </div>
+    </div>
+    <div class="g-plates">
+      <figure><img src="../assets/gallery/forest_2.jpg" alt="A floating frame" loading="lazy" width="720" height="900"><figcaption>A floating frame</figcaption></figure>
+      <figure><img src="../assets/gallery/forest_3.jpg" alt="In the dappled light" loading="lazy" width="720" height="900"><figcaption>In the dappled light</figcaption></figure>
+      <figure><img src="../assets/gallery/forest_4.jpg" alt="The last photo (key photo)" loading="lazy" width="720" height="900"><figcaption>The last photo (key photo)</figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="gallery gallery-museum" id="g-museum">
+  <div class="wrap">
+    <div class="g-grid">
+      <div class="g-stage" data-g3d="museum" data-root="../">
+        <img src="../assets/gallery/museum_1.jpg" alt="The Concrete Museum" width="720" height="900">
+        <span class="g-hint">Move to look around · scroll to walk in</span>
+      </div>
+      <div class="g-text">
+        <p class="eyebrow">Gallery 02 — Concrete museum</p>
+        <h2>The Concrete Museum</h2>
+        <p class="lead">From a raw-concrete entrance, through a tall corridor, into a great hall filled with light. The final photo is big enough to look up at.</p>
+        <ul class="g-points">
+          <li>Choose which photos go in the entrance, the corridor, at its end and in the hall</li>
+          <li>The hall photo is an unframed acrylic panel up to 16 meters tall</li>
+          <li>Spotlights, golden spheres and translucent figures give a sense of scale. Walk-through videos run 15 to 60 seconds</li>
+        </ul>
+      </div>
+    </div>
+    <div class="g-plates">
+      <figure><img src="../assets/gallery/museum_2.jpg" alt="The entrance wall" loading="lazy" width="720" height="900"><figcaption>The entrance wall</figcaption></figure>
+      <figure><img src="../assets/gallery/museum_3.jpg" alt="A dim corridor" loading="lazy" width="720" height="900"><figcaption>A dim corridor</figcaption></figure>
+      <figure><img src="../assets/gallery/museum_4.jpg" alt="The great hall" loading="lazy" width="720" height="900"><figcaption>The great hall</figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="gallery gallery-sea" id="g-sea">
+  <div class="wrap">
+    <div class="g-grid">
+      <div class="g-stage" data-g3d="sea" data-root="../">
+        <img src="../assets/gallery/sea_1.jpg" alt="The Glass Gallery by the Sea" width="720" height="900">
+        <span class="g-hint">Move to look around · scroll to walk in</span>
+        <div class="g-lights"><button type="button" data-light="morning" aria-pressed="false">Morning</button><button type="button" data-light="noon" aria-pressed="true">Noon</button><button type="button" data-light="dusk" aria-pressed="false">Dusk</button><button type="button" data-light="cloudy" aria-pressed="false">Overcast</button></div>
+      </div>
+      <div class="g-text">
+        <p class="eyebrow">Gallery 03 — Glass gallery by the sea</p>
+        <h2>The Glass Gallery by the Sea</h2>
+        <p class="lead">Beyond a wall of glass, a calm sea and a small island. Hang your photo set on the glass, and the polished floor reflects the sky and the frames.</p>
+        <ul class="g-points">
+          <li>Five times of day: morning, noon, afternoon, dusk and overcast</li>
+          <li>Arrangements, frames, mats and titles work just like the wall mode</li>
+          <li>In the video, the sea beyond the glass glitters</li>
+        </ul>
+      </div>
+    </div>
+    <div class="g-plates">
+      <figure><img src="../assets/gallery/sea_2.jpg" alt="Noon" loading="lazy" width="720" height="900"><figcaption>Noon</figcaption></figure>
+      <figure><img src="../assets/gallery/sea_3.jpg" alt="Dusk" loading="lazy" width="720" height="900"><figcaption>Dusk</figcaption></figure>
+      <figure><img src="../assets/gallery/sea_4.jpg" alt="A frame from the video" loading="lazy" width="720" height="900"><figcaption>A frame from the video</figcaption></figure>
+    </div>
+  </div>
+</section>
 
 <section>
   <div class="wrap">
@@ -89,6 +179,7 @@
 </section>
 </main>
 <script type="module" src="../assets/hero3d.js"></script>
+<script type="module" src="../assets/galleries3d.js"></script>
 <footer class="site-footer">
   <div class="wrap">
     <span>© 2026 pairPics</span>
