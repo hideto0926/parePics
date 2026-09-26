@@ -8,7 +8,7 @@ import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 CONTACT_EMAIL = "[CONTACT_EMAIL]"   # お問い合わせ先のメールアドレス
-APP_STORE_URL = ""                  # App Store のページの URL（公開後に入れる）
+APP_STORE_URL = "https://apps.apple.com/jp/app/pairpics/id6814495545"  # App Store のページの URL
 UPDATED = {"ja": "2026年9月21日", "en": "September 21, 2026"}
 
 T = {
